@@ -3,7 +3,8 @@ import { Editor } from "@tinymce/tinymce-react";
 import { Controller } from "react-hook-form";
 // import conf from "../conf/conf";
 export default function RTE({ name, control, label, defaultValue = "" }) {
-  console.log(import.meta.env.VITE_TINYMCE_API_KEY);
+  const api = import.meta.env.VITE_TINYMCE_API_KEY;
+  console.log(api);
   return (
     <div className="w-full">
       {label && <label className="inline-block mb-1 pl-1">{label}</label>}
