@@ -8,4 +8,4 @@ const conf = {
 };
 export default conf;
 
-console.log(tinyMceApiKey);
+console.log("API in conf:", conf.tinyMceApiKey);
