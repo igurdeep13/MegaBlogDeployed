@@ -1,10 +1,9 @@
 import React from "react";
 import { Editor } from "@tinymce/tinymce-react";
 import { Controller } from "react-hook-form";
-// import conf from "../conf/conf";
+import conf from "../conf/conf";
 export default function RTE({ name, control, label, defaultValue = "" }) {
-  const api = import.meta.env.VITE_TINYMCE_API_KEY;
-  console.log(api);
+  console.log(conf.tinyMceApiKey);
   console.log("hello");
   return (
     <div className="w-full">
