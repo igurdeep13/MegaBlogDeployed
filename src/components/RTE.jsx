@@ -5,6 +5,7 @@ import { Controller } from "react-hook-form";
 export default function RTE({ name, control, label, defaultValue = "" }) {
   const api = import.meta.env.VITE_TINYMCE_API_KEY;
   console.log(api);
+  console.log("hello");
   return (
     <div className="w-full">
       {label && <label className="inline-block mb-1 pl-1">{label}</label>}
