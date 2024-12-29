@@ -7,5 +7,3 @@ const conf = {
   tinyMceApiKey: String(import.meta.env.VITE_TINYMCE_API_KEY),
 };
 export default conf;
-
-console.log("API in conf:", conf.tinyMceApiKey);
